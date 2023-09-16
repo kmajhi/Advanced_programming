@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int CheckThisNumber(int function_variable) {
-    if (function_variable % 5 == 0) {
+int CheckThisNumber(int m) {
+    if (m % 5 == 0) {
         return 1;
     } else {
         return 0;
@@ -9,14 +9,14 @@ int CheckThisNumber(int function_variable) {
 }
 
 int main() {
-    int input_num;
+    int n;
 
     printf("Enter a number: ");
-    scanf("%d", &input_num);
+    scanf("%d", &n);
 
-    int functionErnewVariable = CheckThisNumber(input_num);
+    int returnValue = CheckThisNumber(n);
 
-    if (functionErnewVariable == 1) {
+    if (returnValue == 1) {
         printf("The number is divisible by 5.\n");
     } else {
         printf("The number is not divisible by 5.\n");
